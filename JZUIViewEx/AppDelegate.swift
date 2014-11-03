@@ -16,6 +16,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor.whiteColor()
+        
+        let vc1:UIViewController = JZRootViewController();
+        let nav1 = UINavigationController(rootViewController: vc1);
+        let image1 = UIImage(named:"obsess_icon_selected");
+        nav1.tabBarItem = UITabBarItem(title: "First", image:image1, tag: 1);
+        
+        let vc2:UIViewController =  JZSecondViewController();
+        let nav2 = UINavigationController(rootViewController: vc2);
+        let image2 = UIImage(named: "globe");
+        nav2.tabBarItem = UITabBarItem(title: "Second", image:image2, tag: 2);
+        
+        let vc3:UIViewController =  JZThirdViewController();
+        let nav3 = UINavigationController(rootViewController: vc3);
+        let image3 = UIImage(named:"icon_settings");
+        nav3.tabBarItem = UITabBarItem(title: "Third", image:image3, tag: 3);
+        
+        let arr = [nav1, nav2, nav3];
+        let tabBarController = UITabBarController();
+        tabBarController.viewControllers = arr;
+        self.window!.rootViewController = tabBarController;
+        
         return true
     }
 

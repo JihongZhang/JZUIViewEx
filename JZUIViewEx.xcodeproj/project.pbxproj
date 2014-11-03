@@ -13,6 +13,12 @@
 		08A34E831A0755E200B38D19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A34E821A0755E200B38D19 /* Images.xcassets */; };
 		08A34E861A0755E200B38D19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08A34E841A0755E200B38D19 /* LaunchScreen.xib */; };
 		08A34E921A0755E200B38D19 /* JZUIViewExTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A34E911A0755E200B38D19 /* JZUIViewExTests.swift */; };
+		08A34E9E1A07569500B38D19 /* JZRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A34E9B1A07569500B38D19 /* JZRootViewController.swift */; };
+		08A34E9F1A07569500B38D19 /* JZSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A34E9C1A07569500B38D19 /* JZSecondViewController.swift */; };
+		08A34EA01A07569500B38D19 /* JZThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A34E9D1A07569500B38D19 /* JZThirdViewController.swift */; };
+		08A34EA41A0757B400B38D19 /* icon_settings@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A34EA31A0757B400B38D19 /* icon_settings@2x.png */; };
+		08A34EA61A0757BF00B38D19 /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A34EA51A0757BF00B38D19 /* globe@2x.png */; };
+		08A34EA81A0757C800B38D19 /* obsess_icon_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A34EA71A0757C800B38D19 /* obsess_icon_selected@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		08A34E8B1A0755E200B38D19 /* JZUIViewExTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JZUIViewExTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08A34E901A0755E200B38D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08A34E911A0755E200B38D19 /* JZUIViewExTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JZUIViewExTests.swift; sourceTree = "<group>"; };
+		08A34E9B1A07569500B38D19 /* JZRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZRootViewController.swift; sourceTree = "<group>"; };
+		08A34E9C1A07569500B38D19 /* JZSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZSecondViewController.swift; sourceTree = "<group>"; };
+		08A34E9D1A07569500B38D19 /* JZThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JZThirdViewController.swift; sourceTree = "<group>"; };
+		08A34EA31A0757B400B38D19 /* icon_settings@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_settings@2x.png"; sourceTree = "<group>"; };
+		08A34EA51A0757BF00B38D19 /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		08A34EA71A0757C800B38D19 /* obsess_icon_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "obsess_icon_selected@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +89,14 @@
 		08A34E781A0755E200B38D19 /* JZUIViewEx */ = {
 			isa = PBXGroup;
 			children = (
+				08A34EA11A07579900B38D19 /* Resource */,
 				08A34E7B1A0755E200B38D19 /* AppDelegate.swift */,
 				08A34E7D1A0755E200B38D19 /* ViewController.swift */,
 				08A34E7F1A0755E200B38D19 /* Main.storyboard */,
 				08A34E821A0755E200B38D19 /* Images.xcassets */,
+				08A34E9B1A07569500B38D19 /* JZRootViewController.swift */,
+				08A34E9C1A07569500B38D19 /* JZSecondViewController.swift */,
+				08A34E9D1A07569500B38D19 /* JZThirdViewController.swift */,
 				08A34E841A0755E200B38D19 /* LaunchScreen.xib */,
 				08A34E791A0755E200B38D19 /* Supporting Files */,
 			);
@@ -110,6 +126,24 @@
 				08A34E901A0755E200B38D19 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08A34EA11A07579900B38D19 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				08A34EA21A0757A300B38D19 /* Images */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		08A34EA21A0757A300B38D19 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				08A34EA71A0757C800B38D19 /* obsess_icon_selected@2x.png */,
+				08A34EA31A0757B400B38D19 /* icon_settings@2x.png */,
+				08A34EA51A0757BF00B38D19 /* globe@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +228,10 @@
 			files = (
 				08A34E811A0755E200B38D19 /* Main.storyboard in Resources */,
 				08A34E861A0755E200B38D19 /* LaunchScreen.xib in Resources */,
+				08A34EA61A0757BF00B38D19 /* globe@2x.png in Resources */,
+				08A34EA41A0757B400B38D19 /* icon_settings@2x.png in Resources */,
 				08A34E831A0755E200B38D19 /* Images.xcassets in Resources */,
+				08A34EA81A0757C800B38D19 /* obsess_icon_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A34E9E1A07569500B38D19 /* JZRootViewController.swift in Sources */,
 				08A34E7E1A0755E200B38D19 /* ViewController.swift in Sources */,
+				08A34E9F1A07569500B38D19 /* JZSecondViewController.swift in Sources */,
 				08A34E7C1A0755E200B38D19 /* AppDelegate.swift in Sources */,
+				08A34EA01A07569500B38D19 /* JZThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
