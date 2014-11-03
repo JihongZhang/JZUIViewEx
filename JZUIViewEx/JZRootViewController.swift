@@ -55,6 +55,7 @@ class JZRootViewController : UIViewController, UITableViewDelegate, UITableViewD
         }
         var s = dataArr.objectAtIndex(indexPath.row) as? String;
         cell!.textLabel.text = s;
+        //cell!.detailTextLabel?.text = "Detail text label";
         return cell!;
         
     }
@@ -62,9 +63,25 @@ class JZRootViewController : UIViewController, UITableViewDelegate, UITableViewD
     //optional func numberOfSectionsInTableView(tableView: UITableView) -> Int // Default is 1 if not implemented
     
     
+    // UITableViewDelegate methods
+    
+    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
+        
+        let alert = UIAlertController(title: "Item selected", message: "You selected item \(indexPath.row)", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "OK",
+            style: UIAlertActionStyle.Default,
+            handler: {
+                (alert: UIAlertAction!) in println("An alert of type \(alert.style.hashValue) was tapped!")
+        }))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    /*
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("row \(indexPath.row) selected");
     }
- 
-  
+    */
 }
