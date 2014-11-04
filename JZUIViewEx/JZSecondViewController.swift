@@ -22,9 +22,13 @@ class  JZSecondViewController: UIViewController{
         self.view.backgroundColor = UIColor.purpleColor()
         
         var button = UIButton.buttonWithType(.System) as UIButton;
-        var frame = CGRect(x: 100, y: 100, width: 200, height: 40);
+        var frame = CGRect(x: 70, y: 100, width: 250, height: 100);
         button.frame = frame;
-        button.setTitle("Back to Previous Page", forState: .Normal);
+        //button.backgroundColor = UIColor.redColor();
+        button.setTitle("Back to Previous navigation Page\nI won't chrashed if I come here not via navigation", forState: .Normal);
+        button.titleLabel?.numberOfLines = 2;
+        button.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping;
+        button.titleLabel?.textAlignment = NSTextAlignment.Center;
         button.addTarget(self, action: "backToPreviousClicked:", forControlEvents: .TouchUpInside);
         self.view.addSubview(button);
         
@@ -34,16 +38,16 @@ class  JZSecondViewController: UIViewController{
         self.navigationItem.title = "Second Page";
         
         
-        var clickMeButton = UIButton(frame: CGRect(x: 100, y: 200, width: 200, height: 40));
+        var clickMeButton = UIButton(frame: CGRect(x: 100, y: 300, width: 200, height: 40));
         clickMeButton.backgroundColor = UIColor.grayColor();
         clickMeButton.setTitle("Click Me", forState: .Normal);
         clickMeButton.addTarget(self, action: "clickMeClicked:", forControlEvents: .TouchUpInside);
         self.view.addSubview(clickMeButton);
         
-        let rect = CGRect(x: 100, y: 150, width: 200, height: 44);
+        let rect = CGRect(x: 100, y: 250, width: 200, height: 44);
         myLabel = UILabel(frame: rect);
-        myLabel!.text = "Click Count: ";
-        myLabel!.backgroundColor = UIColor.grayColor();
+        myLabel!.text = "Click Count: 0";
+        //myLabel!.backgroundColor = UIColor.grayColor();
         myLabel?.textAlignment = .Center;
         self.view.addSubview(myLabel!);
     }

@@ -21,7 +21,10 @@ class  JZThirdViewController: UIViewController{
         var button = UIButton.buttonWithType(.System) as UIButton;
         var frame = CGRect(x: 100, y: 100, width: 200, height: 40);
         button.frame = frame;
-        button.setTitle("Back to Second Page", forState: .Normal);
+        button.setTitle("Back to Second Page if you come here via navigation", forState: .Normal);
+        button.titleLabel?.numberOfLines = 2;
+        button.titleLabel?.lineBreakMode = NSLineBreakMode.ByWordWrapping;
+        button.titleLabel?.textAlignment = NSTextAlignment.Center;
         button.addTarget(self, action: "clickMe:", forControlEvents: .TouchUpInside);
         self.view.addSubview(button);
         
